@@ -159,8 +159,10 @@ class DoubleLinkedList
                         i++;
                     }
 
-                    // Step 2: Traverse backward
-                    
+                    // Step 2: Traverse backward 
+                    cout << "\nRecords in descending order of roll number are:\n";
+                }
+
             }
             
             
