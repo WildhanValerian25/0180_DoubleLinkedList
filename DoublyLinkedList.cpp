@@ -9,9 +9,3 @@ class Node {
     Node *prev;
 };
 
-class doublelinkedlist{
-    private:
-    Node *START;
-
-
-
