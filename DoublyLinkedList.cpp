@@ -177,6 +177,28 @@ class DoubleLinkedList
                             return;
                         }
 
+                        int rollNo;
+                        cout << "\nEnter the roll number to search: ";
+                        cin >> rollNo;
+
+                        Node *current = START;
+
+                        // Step 1: Traverse to find matching roll number
+                        while (current != NULL && current->noMhs != rollNo)
+                            current = current->next;
+
+                        // Step 2: Output result 
+                        if (current == NULL)
+                        {
+                            cout << "Record found\n";
+                        }
+                        else
+                        {
+                            cout << "Record found\n";
+                            cout << "Roll Number: " << current->noMhs << endl;
+                        }
+                    }
+
                 
 
                     
@@ -189,6 +211,24 @@ class DoubleLinkedList
         
 };
 
-int main (){
+int main ()
+{
+    DoubleLinkedList list;
+    char choice;
+
+    do 
+    {
+        cout << "\nMenu:\n";
+        cout << "1. Add Record\n";
+        cout << "2. Delete Record\n";
+        cout << "3. View Ascending\n";
+        cout << "4. View Descending\n";
+        cout << "5. Search Record\n";
+        cout << "6. Exit\n";
+        cout << "Enter your choice: ";
+
+        cin >> choice;
+
+        switch (choice)
 
 }
